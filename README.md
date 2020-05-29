@@ -24,10 +24,10 @@ Sunnysideup\SanitiseClassName\Sanitiser:
 
 Use shortened class names:
 ```php
-Sunnysideup\SanitiseClassName\Sanitiser::scramble(MyClass::class);
+Sunnysideup\SanitiseClassName\Sanitiser::scramble(Product::class);
 ```
 
 Reverse shortened class names:
 ```php
-Sunnysideup\SanitiseClassName\Sanitiser::unscramble(MyClass::class);
+Sunnysideup\SanitiseClassName\Sanitiser::unscramble(Product::class);
 ```
