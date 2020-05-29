@@ -4,7 +4,6 @@ namespace Sunnysideup\SanitiseClassName;
 
 class Sanitiser
 {
-
     /**
      * you can fill this variable like this:
      * ```php
@@ -14,17 +13,17 @@ class Sanitiser
      */
     private static $scramble_registry = [];
 
-    public static function sanitise(string $className) : string
+    public static function sanitise(string $className): string
     {
         return str_replace('\\', '-', $className);
     }
 
-    public static function unsanitise(string $className) : string
+    public static function unsanitise(string $className): string
     {
         return str_replace('-', '\\', $className);
     }
 
-    public static function scramble(string $className) : string
+    public static function scramble(string $className): string
     {
         $registry = Config::inst()->get(self::class, 'scramble_registry');
         if (isset($registry[$className])) {
@@ -33,11 +32,11 @@ class Sanitiser
         return $className;
     }
 
-    public static function unscramble(string $className) : string
+    public static function unscramble(string $className): string
     {
         $registry = Config::inst()->get(self::class, 'scramble_registry');
         $registry = array_flip($registry);
-        if (($registry[$className])) {
+        if ($registry[$className]) {
             return $registry[$className];
         }
         return $className;
