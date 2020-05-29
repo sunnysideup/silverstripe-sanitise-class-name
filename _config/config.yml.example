@@ -1,0 +1,5 @@
+
+
+Sunnysideup\SanitiseClassName\Sanitiser:
+  scramble_registry:
+    Sunnysideup\Ecommerce\Product: Product
