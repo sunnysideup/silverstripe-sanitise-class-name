@@ -25,7 +25,7 @@ class Sanitiser
 
     public static function scramble(string $className): string
     {
-        $registry = Config::inst()->get(self::class, 'scramble_registry');
+        $registry = self::get_registry();
         if (isset($registry[$className])) {
             return $registry[$className];
         }
@@ -34,11 +34,16 @@ class Sanitiser
 
     public static function unscramble(string $className): string
     {
-        $registry = Config::inst()->get(self::class, 'scramble_registry');
+        $registry = self::get_registry();
         $registry = array_flip($registry);
         if ($registry[$className]) {
             return $registry[$className];
         }
         return $className;
+    }
+
+    protected static function get_registry() : array
+    {
+        return Config::inst()->get(self::class, 'scramble_registry');
     }
 }
