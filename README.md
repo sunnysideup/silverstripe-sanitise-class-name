@@ -8,12 +8,14 @@ Sanitiser::sanitise(MyClass::class);
 To turn hyphens into backslashes:
 ```php
 Sanitiser::unsanitise(MyClass::class);
-
-Use shortened class names
-```php
-Sanitiser::scamble(MyClass::class);
 ```
 
+Use shortened class names:
 ```php
-Sanitiser::unscamble(MyClass::class);
+Sanitiser::scramble(MyClass::class);
+```
+
+Reverse shortened class names:
+```php
+Sanitiser::unscramble(MyClass::class);
 ```
