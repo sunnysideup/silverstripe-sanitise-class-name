@@ -1,4 +1,4 @@
-# usage:
+# usage
 
 To turn backslashes into hyphens:
 ```php
