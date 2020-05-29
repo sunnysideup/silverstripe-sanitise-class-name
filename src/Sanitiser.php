@@ -42,7 +42,7 @@ class Sanitiser
         return $className;
     }
 
-    protected static function get_registry() : array
+    protected static function get_registry(): array
     {
         return Config::inst()->get(self::class, 'scramble_registry');
     }
