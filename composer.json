@@ -1,5 +1,5 @@
 {
-    "name": "sunnysideup/sanitise-classname",
+    "name": "sunnysideup/sanitise-class-name",
     "description": "Sanitises a classname to hyphens and back to backslashes",
     "type": "silverstripe-vendormodule",
     "keywords": [
