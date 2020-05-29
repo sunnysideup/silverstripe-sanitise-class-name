@@ -1,9 +1,19 @@
 # usage:
 
-`Sanitiser::sanitise(MyClass::class)`
+To turn backslashes into hyphens:
+```php
+Sanitiser::sanitise(MyClass::class);
+```
 
-`Sanitiser::unsanitise(MyClass::class`
+To turn hyphens into backslashes:
+```php
+Sanitiser::unsanitise(MyClass::class);
 
-`Sanitiser::scamble(MyClass::class`
+Use shortened class names
+```php
+Sanitiser::scamble(MyClass::class);
+```
 
-`Sanitiser::unscamble(MyClass::class`
+```php
+Sanitiser::unscamble(MyClass::class);
+```
