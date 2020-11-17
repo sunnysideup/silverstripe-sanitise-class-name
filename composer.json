@@ -25,11 +25,6 @@
             "role": "lead developer"
         }
     ],
-    "extra": {
-        "expose": [
-            "client/dist/"
-        ]
-    },
     "autoload": {
         "psr-4": {
             "Sunnysideup\\SanitiseClassName\\": "src/"
