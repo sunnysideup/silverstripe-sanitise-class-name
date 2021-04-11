@@ -8,7 +8,8 @@ class Sanitiser
      * you can fill this variable like this:
      * ```php
      *     Sunnysideup\Ecommerce\Product => 'Product'
-     * ```
+     * ```.
+     *
      * @var array
      */
     private static $scramble_registry = [];
@@ -29,6 +30,7 @@ class Sanitiser
         if (isset($registry[$className])) {
             return $registry[$className];
         }
+
         return $className;
     }
 
@@ -39,6 +41,7 @@ class Sanitiser
         if ($registry[$className]) {
             return $registry[$className];
         }
+
         return $className;
     }
 
