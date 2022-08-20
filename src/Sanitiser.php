@@ -2,6 +2,8 @@
 
 namespace Sunnysideup\SanitiseClassName;
 
+use SilverStripe\Core\Config\Config;
+
 class Sanitiser
 {
     /**
