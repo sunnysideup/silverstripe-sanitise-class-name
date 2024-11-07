@@ -1,6 +1,6 @@
 {
     "name": "sunnysideup/sanitise-class-name",
-    "description": "Sanitises a classname to hyphens and back to backslashes",
+    "description": "Sanitises a classname to hyphens and also back to backslashes as needed.",
     "type": "silverstripe-vendormodule",
     "keywords": [
         "Silverstripe-CMS",
