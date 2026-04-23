@@ -29,11 +29,8 @@ class Sanitiser
     public static function scramble(string $className): string
     {
         $registry = self::get_registry();
-        if (isset($registry[$className])) {
-            return $registry[$className];
-        }
 
-        return $className;
+        return $registry[$className] ?? $className;
     }
 
     public static function unscramble(string $className): string
